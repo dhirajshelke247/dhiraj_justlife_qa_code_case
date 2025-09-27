@@ -8,7 +8,6 @@ This repository contains a test automation framework built to test the booking w
 *   **End-to-End Test Scenario**: Automates a complete user journey from logging in to creating a booking and verifying it in the booking history.
 *   **Behavior-Driven Development (BDD)**: Utilizes Cucumber with Gherkin syntax (`.feature` files) to create readable and maintainable test scenarios.
 *   **Page Object Model (POM)**: Implements the POM design pattern to separate UI elements and business logic, enhancing code reusability and maintainability.
-*   **Cross-Platform Execution**: Leverages WebDriverManager to automatically manage browser drivers (ChromeDriver), simplifying setup.
 *   **Reporting**: Generates a JSON report of the test execution results.
 
 ## Test Scenario Covered

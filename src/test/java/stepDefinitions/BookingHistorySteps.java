@@ -17,8 +17,8 @@ public class BookingHistorySteps {
 
     @Then("I go to Bookings page")
     public void i_go_to_bookings_page(){
-        bookingHistoryPage.goToBookingsPage();
-
+        driver.get("https://www.justlife.com/en-AE/my-account/appointments/");
+        bookingHistoryPage.verifyBookingsPage();
     }
     @When("I open last booking")
     public void i_open_past_booking(){

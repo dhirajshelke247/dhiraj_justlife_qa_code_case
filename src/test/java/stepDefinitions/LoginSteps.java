@@ -11,7 +11,7 @@ public class LoginSteps {
 
     public LoginSteps() {
         this.driver = Hooks.driver;
-        this.loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(driver);
     }
 
     @Given("I open the Justlife checkout page")

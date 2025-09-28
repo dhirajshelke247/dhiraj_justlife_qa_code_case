@@ -12,7 +12,7 @@ public class BookingSteps {
 
     public BookingSteps() {
         this.driver = Hooks.driver;
-        this.bookingPage = new BookingPage(driver);
+        bookingPage = new BookingPage(driver);
     }
 
     @When("I select hours")

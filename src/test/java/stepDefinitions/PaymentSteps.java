@@ -11,7 +11,7 @@ public class PaymentSteps {
 
     public PaymentSteps() {
         this.driver = Hooks.driver;
-        this.paymentPage = new PaymentPage(driver);
+        paymentPage = new PaymentPage(driver);
     }
 
 

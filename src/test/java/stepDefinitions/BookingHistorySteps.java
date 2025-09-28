@@ -9,9 +9,10 @@ import pages.*;
 public class BookingHistorySteps {
     WebDriver driver;
     BookingHistoryPage bookingHistoryPage;
+
     public BookingHistorySteps() {
         this.driver = Hooks.driver;
-        this.bookingHistoryPage = new BookingHistoryPage(driver);
+        bookingHistoryPage = new BookingHistoryPage(driver);
     }
 
 

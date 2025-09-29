@@ -32,7 +32,14 @@ public class BookingPage extends BasePage {
     }
 
     public void selectHours() {
-        waitForClickable(closeNotification).click();
+        try {
+            if (!driver.findElements(closeNotification).isEmpty()) {
+                waitForClickable(closeNotification).click();
+            }
+        } catch (Exception e) {
+            System.out.println("Notification not displayed, continuing...");
+        }
+
         WebElement hours = waitForClickable(hoursDropdown);
         hours.click();
         String displayedHours = waitForClickable(durationDetail).getText();
